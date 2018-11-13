@@ -23,11 +23,14 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
     Vector3 movement;
     float lastDir;
     Vector2 distanceLeft;
+
+    float fixMargin = 0.12f;
+
     Vector2 distanceRight;
     Vector2 pointCenter{ get { return rb2D.position + distanceCenter; }}
     Vector2 distanceCenter;
-    const float margin = 0.2f;
-    const float minDistance = 0.05f; //0.05 || 0.5f
+    const float margin = 0.05f; //0.2f
+    const float minDistance = 0.07f; //0.05 || 0.5f
     public Vector2 pointLeft { get { return rb2D.position + distanceLeft; }}
     public Vector2 pointRight { get { return rb2D.position + distanceRight; }}
     //public int playerHealth = 3;
@@ -45,7 +48,7 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
 	void Start () {
         //HPText.text = "Health: " + playerHealth;
         
-        distanceLeft.x = -(col2D.bounds.extents.x - margin);
+        distanceLeft.x = -(col2D.bounds.extents.x - margin + fixMargin);
         distanceLeft.y = -col2D.bounds.extents.y;
         distanceRight.x = col2D.bounds.extents.x - margin;
         distanceRight.y = -col2D.bounds.extents.y;
