@@ -213,6 +213,12 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
             
         }
 
+         if ( other.CompareTag("stonePortal"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);  
+            
+        }
+
         /*if (other.CompareTag("fireball"))
         {
             playerHealth--;
