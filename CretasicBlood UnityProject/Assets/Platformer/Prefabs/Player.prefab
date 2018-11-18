@@ -26,7 +26,6 @@ GameObject:
   - component: {fileID: 114371924879684322}
   - component: {fileID: 61037727286768834}
   - component: {fileID: 95362143069132550}
-  - component: {fileID: 114207898370161864}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -107,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1381843700326472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.2, y: -208, z: 0}
+  m_LocalPosition: {x: -59.6, y: 17.61, z: 0}
   m_LocalScale: {x: 1.4353849, y: 1.4490205, z: 1.4353845}
   m_Children:
   - {fileID: 4414819759832510}
@@ -237,18 +236,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02320844, y: -0.00845176}
+  m_Offset: {x: 0.03500259, y: 0.043633193}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.41389942, y: 0.55250067}
-    oldSize: {x: 1.25, y: 1.64}
+    pivot: {x: 0.46992296, y: 0.5126758}
+    oldSize: {x: 0.91, y: 1.856}
     newSize: {x: 1.25, y: 1.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.57944465, y: 1.6607248}
+  m_Size: {x: 1.0034854, y: 1.836977}
   m_EdgeRadius: 0
 --- !u!61 &61703649441758464
 BoxCollider2D:
@@ -262,7 +261,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0999807, y: -0.021193743}
+  m_Offset: {x: -0.05837357, y: 0.28136194}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -273,7 +272,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.61968887, y: 1.4344966}
+  m_Size: {x: 0.6743506, y: 1.1902833}
   m_EdgeRadius: 0
 --- !u!81 &81151618437561686
 AudioListener:
@@ -314,17 +313,7 @@ MonoBehaviour:
   playerMaxHealth: 50
   playerCurrentHealth: 0
   flashLength: 0.5
---- !u!114 &114207898370161864
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1381843700326472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbd27ba37efb93545bb65250893b9937, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  collectedTreasures: 0
 --- !u!114 &114371924879684322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -437,7 +426,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300036, guid: 2a20ee32c66194d4d86467368dcce5ce, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 24bbe0a9034fe42f8a3a8e923dac1138, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
