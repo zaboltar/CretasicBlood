@@ -5,11 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Platformer/Scenes/startScreen.unity
+    path: Assets/Platformer/Scenes/0startScreen.unity
     guid: 8409882f439385a4eac5c1c666352d7b
   - enabled: 1
     path: Assets/Platformer/Scenes/Level01.unity
@@ -17,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Platformer/Scenes/Level02.unity
     guid: a7207dda5b9b57d42b7b57d1a3726605
+  - enabled: 1
+    path: Assets/Platformer/Scenes/Level03.unity
+    guid: 26bd4eb5cc2db1743a1e808c8df50f1a
   m_configObjects: {}

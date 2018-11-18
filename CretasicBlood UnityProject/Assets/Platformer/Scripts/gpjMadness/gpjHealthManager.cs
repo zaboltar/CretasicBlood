@@ -13,6 +13,8 @@ public class gpjHealthManager : MonoBehaviour {
 	private float flashCounter;
 
 	private SpriteRenderer playerSprite;
+
+	public int collectedTreasures;
 	
 	// Use this for initialization
 	void Start () {
@@ -70,6 +72,12 @@ public class gpjHealthManager : MonoBehaviour {
 		if (other.tag == "health"){
 			playerCurrentHealth += 5;
 			Destroy(other.gameObject);
+		}
+
+		if (other.tag == "collectableIdol") {
+			collectedTreasures++;
+			Destroy(other.gameObject);
+
 		}
 	}
 

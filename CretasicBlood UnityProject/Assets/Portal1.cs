@@ -13,12 +13,15 @@ public class Portal1 : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) { 
 	   if ( other.CompareTag("stonePortalTo2"))
-        {
-
-        	Debug.Log("Toca");
+        {        
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);  
-            
         }
+
+         if ( other.CompareTag("stonePortalTo3"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(3); 
+        }
+        
 
 	}
 

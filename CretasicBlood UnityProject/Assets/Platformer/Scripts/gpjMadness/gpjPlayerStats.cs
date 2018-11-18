@@ -18,6 +18,7 @@ public class gpjPlayerStats : MonoBehaviour {
 	public int currentAttack;
 	public int currentDefence;
 
+
 	private gpjHealthManager thePlayerHealth;
 
 

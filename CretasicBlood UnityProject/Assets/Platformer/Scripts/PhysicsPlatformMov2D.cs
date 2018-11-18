@@ -24,7 +24,7 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
     float lastDir;
     Vector2 distanceLeft;
 
-    float fixMargin = 0.12f;
+    float fixMargin = 0.08f;
 
     Vector2 distanceRight;
     Vector2 pointCenter{ get { return rb2D.position + distanceCenter; }}

@@ -10,10 +10,14 @@ public class gpjUIManager : MonoBehaviour {
 	public Text levelText;
 	public gpjHealthManager playerHealth;
 	private gpjPlayerStats thePs;
+	private collectIdol collectIdol;
+
+	public Text collectableCount;
 
 	// Use this for initialization
 	void Start () {
 		thePs = GetComponent<gpjPlayerStats>();
+		collectIdol = GetComponent<collectIdol>();
 	}
 	
 	// Update is called once per frame
@@ -22,5 +26,6 @@ public class gpjUIManager : MonoBehaviour {
 		healthBar.value = playerHealth.playerCurrentHealth;
 		healthText.text = "HP: " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
 		levelText.text = "Lvl: " + thePs.currentLevel;
+		collectableCount.text = "Idols: " + playerHealth.collectedTreasures;
 	}
 }

@@ -4,51 +4,44 @@ using UnityEngine;
 
 public class fireBall : MonoBehaviour {
 
-    
     public float speed;
-    private Transform playerPos;
-    public Animator anim;
-    public Vector3 lastPos;
 
+    private Transform player;
+    private Vector2 target;
+
+    
+  
     
     // Use this for initialization
     void Start() {
-        
-        speed = 3f;
-        playerPos = GameObject.FindGameObjectWithTag("Player").transform;
+      
+      player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        // Add + 1 to player's last known position so bullet appears to float above ground.
-        lastPos = new Vector3(playerPos.position.x, playerPos.position.y, playerPos.position.z);
-
-        // Aim bullet in player's direction.
-        transform.LookAt(lastPos);
-
+      target = new Vector2(player.position.x, player.position.y);
 
     }
 
     // Update is called once per frame
     void Update() {
-        // Move the projectile forward towards the player's last known direction;
-        transform.position += transform.forward * speed * Time.deltaTime;
-    }
+        //true homming
+        //transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);  
 
-    private void FixedUpdate()
-    {
-        
-
-        /*if (Vector3.Distance(transform.position, lastPos) < 0.2f)
-        {
-            Destroy(gameObject);
-        }*/
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Destroy(gameObject);
+        // partial homming
+         transform.position = Vector2.MoveTowards(transform.position, target , speed * Time.deltaTime);  
+        if (transform.position.x == target.x && transform.position.y == target.y) {
+            DestroyProjectile();
         }
     }
 
+    void OnTriggerEnter2D (Collider2D other) {
+        if (other.CompareTag("Player")){
+            DestroyProjectile();
+        } 
+    }
+
+    void DestroyProjectile() {
+        Destroy(gameObject);
+    }
+   
 
 }

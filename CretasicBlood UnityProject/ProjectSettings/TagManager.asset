@@ -23,6 +23,8 @@ TagManager:
   - health
   - stonePortal
   - stonePortalTo2
+  - stonePortalTo3
+  - collectableIdol
   layers:
   - Default
   - TransparentFX
