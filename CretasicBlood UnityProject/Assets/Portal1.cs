@@ -12,6 +12,8 @@ public class Portal1 : MonoBehaviour {
 	// Update is called once per frame
 
 	void OnTriggerEnter2D(Collider2D other) { 
+
+		//hacer un switch acá
 	   if ( other.CompareTag("stonePortalTo2"))
         {        
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);  
@@ -20,6 +22,11 @@ public class Portal1 : MonoBehaviour {
          if ( other.CompareTag("stonePortalTo3"))
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(3); 
+        }
+
+          if ( other.CompareTag("stonePortalTo4"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(4); 
         }
         
 
