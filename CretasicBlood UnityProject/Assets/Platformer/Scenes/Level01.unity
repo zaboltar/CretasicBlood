@@ -325,6 +325,75 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &174877582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 174877583}
+  - component: {fileID: 174877585}
+  - component: {fileID: 174877584}
+  m_Layer: 2
+  m_Name: waypointStart (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &174877583
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174877582}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -58.78, y: -9.65, z: 0}
+  m_LocalScale: {x: 1.43048, y: 1.43048, z: 1.43048}
+  m_Children: []
+  m_Father: {fileID: 1281591878}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &174877584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174877582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581d6f834265a8248a4ba3d91e6a9a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 5
+  startQuest: 1
+  endQuest: 0
+--- !u!61 &174877585
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174877582}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.46590376, y: 0.9539933}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9318075, y: 2.9079866}
+  m_EdgeRadius: 0
 --- !u!1 &193365386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1156,75 @@ Transform:
   m_Father: {fileID: 1327735350}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &666715962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 666715963}
+  - component: {fileID: 666715965}
+  - component: {fileID: 666715964}
+  m_Layer: 2
+  m_Name: waypointReach (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &666715963
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 666715962}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.39, y: -9.19, z: 0}
+  m_LocalScale: {x: 1.43048, y: 1.43048, z: 1.43048}
+  m_Children: []
+  m_Father: {fileID: 1281591878}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &666715964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 666715962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581d6f834265a8248a4ba3d91e6a9a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 5
+  startQuest: 0
+  endQuest: 1
+--- !u!61 &666715965
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 666715962}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.46590376, y: 1.4555893}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9318075, y: 3.9111786}
+  m_EdgeRadius: 0
 --- !u!1 &688390095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,7 +1288,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 688390095}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.47, y: 17.84, z: 0}
+  m_LocalPosition: {x: -27.93, y: -9.19, z: 0}
   m_LocalScale: {x: 1.4304824, y: 1.4304827, z: 1.4304827}
   m_Children: []
   m_Father: {fileID: 1281591878}
@@ -1411,11 +1549,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4226190820636896, guid: 519615d522733d34a8ac35e16a2f24af, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -77.773026
+      value: -70.76
       objectReference: {fileID: 0}
     - target: {fileID: 4226190820636896, guid: 519615d522733d34a8ac35e16a2f24af, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.889927
+      value: -8.93
       objectReference: {fileID: 0}
     - target: {fileID: 4226190820636896, guid: 519615d522733d34a8ac35e16a2f24af, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1455,7 +1593,7 @@ GameObject:
   - component: {fileID: 805726546}
   - component: {fileID: 805726545}
   m_Layer: 2
-  m_Name: QuestTrigger (2)
+  m_Name: waypointStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1468,7 +1606,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 805726543}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.6, y: 17.38, z: 0}
+  m_LocalPosition: {x: -59.9, y: -9.65, z: 0}
   m_LocalScale: {x: 1.43048, y: 1.43048, z: 1.43048}
   m_Children: []
   m_Father: {fileID: 1281591878}
@@ -1525,7 +1663,7 @@ GameObject:
   - component: {fileID: 854313027}
   - component: {fileID: 854313030}
   m_Layer: 0
-  m_Name: paneton
+  m_Name: Objective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1596,7 +1734,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 854313026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.84, y: 18.27, z: 0}
+  m_LocalPosition: {x: -13.07, y: 17.58, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1281591878}
@@ -2245,7 +2383,7 @@ GameObject:
   - component: {fileID: 1237715056}
   - component: {fileID: 1237715055}
   m_Layer: 2
-  m_Name: QuestTrigger (4)
+  m_Name: enemyKill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2333,6 +2471,10 @@ Transform:
   - {fileID: 1708166220}
   - {fileID: 854313029}
   - {fileID: 1237715054}
+  - {fileID: 174877583}
+  - {fileID: 666715963}
+  - {fileID: 1944745034}
+  - {fileID: 1792121138}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2648,11 +2790,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4226190820636896, guid: 519615d522733d34a8ac35e16a2f24af, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -68.976585
+      value: -69.91
       objectReference: {fileID: 0}
     - target: {fileID: 4226190820636896, guid: 519615d522733d34a8ac35e16a2f24af, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -8.673598
+      value: -9.62
       objectReference: {fileID: 0}
     - target: {fileID: 4226190820636896, guid: 519615d522733d34a8ac35e16a2f24af, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2720,6 +2862,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4332916927382266, guid: 7d76df56298e7984e94d19db6cebcbdb,
     type: 2}
   m_PrefabInternal: {fileID: 2010431550}
+--- !u!114 &1707893863 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114588747244817090, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1855635079}
+  m_Script: {fileID: 11500000, guid: 66eaa187f013f444b95db9ddae9b2e15, type: 3}
 --- !u!1 &1708166219
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,7 +2879,7 @@ GameObject:
   - component: {fileID: 1708166222}
   - component: {fileID: 1708166221}
   m_Layer: 2
-  m_Name: QuestTrigger (3)
+  m_Name: getObjective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2744,7 +2892,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1708166219}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.7, y: 17.98, z: 0}
+  m_LocalPosition: {x: -21.22, y: 9.16, z: 0}
   m_LocalScale: {x: 1.43048, y: 1.43048, z: 1.43048}
   m_Children: []
   m_Father: {fileID: 1281591878}
@@ -3087,6 +3235,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd27ba37efb93545bb65250893b9937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1792121137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1792121138}
+  - component: {fileID: 1792121140}
+  - component: {fileID: 1792121139}
+  m_Layer: 2
+  m_Name: waypointReach (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1792121138
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1792121137}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -57.69, y: -9.19, z: 0}
+  m_LocalScale: {x: 1.43048, y: 1.43048, z: 1.43048}
+  m_Children: []
+  m_Father: {fileID: 1281591878}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792121139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1792121137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581d6f834265a8248a4ba3d91e6a9a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 0
+  startQuest: 0
+  endQuest: 1
+--- !u!61 &1792121140
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1792121137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.46590376, y: 1.4555893}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9318075, y: 3.9111786}
+  m_EdgeRadius: 0
 --- !u!1 &1853788123
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,6 +3582,46 @@ Prefab:
       propertyPath: m_Text
       value: Level 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114014155104655472, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+        type: 2}
+      propertyPath: startText
+      value: hm
+      objectReference: {fileID: 0}
+    - target: {fileID: 114014155104655472, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+        type: 2}
+      propertyPath: endText
+      value: Stone Portals starts and ends levels.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114588747244817090, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+        type: 2}
+      propertyPath: startText
+      value: ahm
+      objectReference: {fileID: 0}
+    - target: {fileID: 114588747244817090, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+        type: 2}
+      propertyPath: endText
+      value: Collect these Idols.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114637762412171186, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+        type: 2}
+      propertyPath: quests.Array.data[6]
+      value: 
+      objectReference: {fileID: 1707893863}
+    - target: {fileID: 114637762412171186, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+        type: 2}
+      propertyPath: quests.Array.data[7]
+      value: 
+      objectReference: {fileID: 1707893863}
+    - target: {fileID: 114635301018641444, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+        type: 2}
+      propertyPath: startText
+      value: uhm
+      objectReference: {fileID: 0}
+    - target: {fileID: 114635301018641444, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+        type: 2}
+      propertyPath: endText
+      value: WASD to Move. Spacebar to Jump.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8351a7887a6fa97429b9553a4ef6ebd9, type: 2}
   m_IsPrefabParent: 0
@@ -3591,6 +3848,75 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1944745033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1944745034}
+  - component: {fileID: 1944745036}
+  - component: {fileID: 1944745035}
+  m_Layer: 2
+  m_Name: waypointStart (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1944745034
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944745033}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -59.12, y: -9.65, z: 0}
+  m_LocalScale: {x: 1.43048, y: 1.43048, z: 1.43048}
+  m_Children: []
+  m_Father: {fileID: 1281591878}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944745035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944745033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581d6f834265a8248a4ba3d91e6a9a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 0
+  startQuest: 1
+  endQuest: 0
+--- !u!61 &1944745036
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1944745033}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.46590376, y: 0.9539933}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9318075, y: 2.9079866}
+  m_EdgeRadius: 0
 --- !u!1001 &1965035470
 Prefab:
   m_ObjectHideFlags: 0
