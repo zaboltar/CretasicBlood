@@ -26,6 +26,7 @@ TagManager:
   - stonePortalTo3
   - collectableIdol
   - stonePortalTo4
+  - stonePortalTo5
   layers:
   - Default
   - TransparentFX

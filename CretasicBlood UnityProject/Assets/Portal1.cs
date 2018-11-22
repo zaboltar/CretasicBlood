@@ -28,6 +28,12 @@ public class Portal1 : MonoBehaviour {
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(4); 
         }
+
+           if ( other.CompareTag("stonePortalTo5"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(5); 
+        }
+        
         
 
 	}

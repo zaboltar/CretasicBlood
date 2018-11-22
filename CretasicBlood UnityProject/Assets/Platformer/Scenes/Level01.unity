@@ -3259,7 +3259,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1792121137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -57.69, y: -9.19, z: 0}
+  m_LocalPosition: {x: -61.83, y: -9.19, z: 0}
   m_LocalScale: {x: 1.43048, y: 1.43048, z: 1.43048}
   m_Children: []
   m_Father: {fileID: 1281591878}
@@ -3620,7 +3620,7 @@ Prefab:
     - target: {fileID: 114635301018641444, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
         type: 2}
       propertyPath: endText
-      value: WASD to Move. Spacebar to Jump.
+      value: Press A and D to Run. Spacebar to Jump.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8351a7887a6fa97429b9553a4ef6ebd9, type: 2}
@@ -3872,7 +3872,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1944745033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -59.12, y: -9.65, z: 0}
+  m_LocalPosition: {x: -61.94, y: -9.65, z: 0}
   m_LocalScale: {x: 1.43048, y: 1.43048, z: 1.43048}
   m_Children: []
   m_Father: {fileID: 1281591878}
