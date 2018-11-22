@@ -236,9 +236,27 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
 
     }
 
+
+
     void OnAttackEnd(){
       attackOrigin.enabled=false;
       isAttack = false;
+    }
+
+    void OnCollisionEnter2D (Collision2D collision) {
+
+    	
+    		if (collision.collider.CompareTag("MovingPlatform")){
+    		transform.SetParent(collision.transform);
+     		}
+    	
+    	
+    }
+
+    void OnCollisionExit2D (Collision2D collision) {
+    	if (collision.collider.CompareTag("MovingPlatform")) {
+                transform.SetParent(null);
+        }
     }
 
 }

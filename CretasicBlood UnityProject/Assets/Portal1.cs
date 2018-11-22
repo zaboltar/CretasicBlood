@@ -13,7 +13,10 @@ public class Portal1 : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) { 
 
-		//hacer un switch acá
+        //NOTA: esta parte del código está hecha explícitamente para que los puristas de la eficiencia
+        // procesal se quejen arduamente. Y con razón.
+
+		//(hacer un switch acá, lol)
 	   if ( other.CompareTag("stonePortalTo2"))
         {        
             UnityEngine.SceneManagement.SceneManager.LoadScene(2);  
@@ -32,6 +35,11 @@ public class Portal1 : MonoBehaviour {
            if ( other.CompareTag("stonePortalTo5"))
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(5); 
+        }
+
+         if ( other.CompareTag("stonePortalTo6"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(6); 
         }
         
         
