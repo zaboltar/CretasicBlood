@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Platformer/Scenes/Level06.unity
     guid: b45d9f674083a11439e74e1cfb46dc5f
+  - enabled: 1
+    path: Assets/Platformer/Scenes/0chooseLevelScreen.unity
+    guid: e48bbef54e7746645aab4810132d701b
   m_configObjects: {}
