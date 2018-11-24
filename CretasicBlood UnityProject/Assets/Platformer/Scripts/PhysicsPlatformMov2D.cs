@@ -83,10 +83,9 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
         if (grounded && Input.GetKeyDown(KeyCode.Space)) {
             
            //ESTO ESTA BIEN AQUI?!
-           animator.SetTrigger("Jump");
+           animator.SetBool("onAirBool", true);
            speed.y = jumpForce;
-        } 
-
+        }
 
 
  }
@@ -94,9 +93,11 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
 
     void FixedUpdate () {
         if (!grounded) {
-        	 
+        	  animator.SetBool("onAirBool", true);
         	
             speed.y -= gravity * Time.fixedDeltaTime;
+            
+            animator.SetFloat("onAirStatus", speed.y);
             
         } 
 
@@ -190,6 +191,7 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
                     if (behaviour != null) { behaviour.OnPlatformStep(gameObject);}
                 }
                 grounded = true;
+                animator.SetBool("onAirBool", false);
                 break;
             }
         }
