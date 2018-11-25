@@ -15,6 +15,7 @@ public class gpjHealthManager : MonoBehaviour {
 	private SpriteRenderer playerSprite;
 
 	public int collectedTreasures;
+	private SFXManager sfxMan;
 	
 	// Use this for initialization
 	void Start () {
@@ -22,12 +23,13 @@ public class gpjHealthManager : MonoBehaviour {
 		playerCurrentHealth = playerMaxHealth;
 
 		playerSprite = GetComponent<SpriteRenderer>();
-		
+		sfxMan = FindObjectOfType<SFXManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (playerCurrentHealth <= 0) {
+
 			UnityEngine.SceneManagement.SceneManager.LoadScene(0);  
 		}
 
@@ -60,7 +62,7 @@ public class gpjHealthManager : MonoBehaviour {
 
 		flashActive = true;
 		flashCounter = flashLength;
-
+		sfxMan.auch.Play();
 
 	}
 
@@ -71,11 +73,13 @@ public class gpjHealthManager : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other){
 		if (other.tag == "health"){
 			playerCurrentHealth += 5;
+			sfxMan.haaa.Play();
 			Destroy(other.gameObject);
 		}
 
 		if (other.tag == "collectableIdol") {
 			collectedTreasures++;
+			sfxMan.getIdol.Play();
 			Destroy(other.gameObject);
 
 		}
