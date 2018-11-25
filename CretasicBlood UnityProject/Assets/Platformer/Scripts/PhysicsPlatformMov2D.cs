@@ -161,7 +161,9 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
             attackOrigin.transform.localPosition = temp;
             attackOrigin.enabled = true;
             isAttack = true;
+            
             sfxMan.soosh.Play();
+            
           } 
 
 
@@ -216,6 +218,7 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
             // gpjUIManager.canvasExists = false;
             SFXManager.sfxManExists = false;        
             Destroy(gameObject);
+           // Destroy(sfxMan.gameObject);
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);  
          }
 

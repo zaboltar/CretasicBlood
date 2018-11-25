@@ -33,9 +33,10 @@ public class gpjHealthManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (playerCurrentHealth <= 0) {
-			Destroy(gameObject);
+			SFXManager.sfxManExists = false;
+			//Destroy(gameObject);
 			// Destroy(playerStats.gameObject);
-			Destroy(sfxMan.gameObject);
+			//Destroy(sfxMan.gameObject);
 			// Destroy(canvas.gameObject);
 			UnityEngine.SceneManagement.SceneManager.LoadScene(0);  
 		}
