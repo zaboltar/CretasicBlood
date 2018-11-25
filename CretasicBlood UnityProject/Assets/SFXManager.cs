@@ -17,7 +17,7 @@ public class SFXManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (sfxM == null) {
+		/*if (sfxM == null) {
 			sfxM = this;
 			DontDestroyOnLoad(transform.gameObject);
 			}else{
@@ -30,7 +30,7 @@ public class SFXManager : MonoBehaviour {
 			Destroy(gameObject);
 		}*/
 
-		}
+		//} 
 	}
 	
 	// Update is called once per frame
