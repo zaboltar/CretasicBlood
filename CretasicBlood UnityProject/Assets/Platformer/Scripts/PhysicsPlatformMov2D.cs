@@ -216,7 +216,7 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
         if (other.CompareTag("deathzone")) {
             playerExists = false;
             // gpjUIManager.canvasExists = false;
-            SFXManager.sfxManExists = false;        
+            //SFXManager.sfxManExists = false;        
             Destroy(gameObject);
            // Destroy(sfxMan.gameObject);
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);  
@@ -232,12 +232,12 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
             
         }
 
-         if ( other.CompareTag("stonePortal"))
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        // if ( other.CompareTag("stonePortal"))
+        //{
+            //UnityEngine.SceneManagement.SceneManager.LoadScene(2);
             //sfxMan.endLevel.Play();  
             
-        }
+        //}
 
         /*if (other.CompareTag("fireball"))
         {
