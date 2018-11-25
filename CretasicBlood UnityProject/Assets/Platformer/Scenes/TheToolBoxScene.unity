@@ -8607,7 +8607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950503ce1b38ff1479460d611510aaf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 3, y: 0}
+  speed: {x: 4, y: 0}
   animator: {fileID: 1782317949}
   axes:
   - keyCode: 100
