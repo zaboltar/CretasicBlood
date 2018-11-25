@@ -37,7 +37,8 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
    // public Text HPText;
     public GameObject blood;
    //public GameObject spearWeapon;
-
+    private SFXManager sfxMan;
+    private static bool playerExists;
     
     void Reset () {
         rb2D = GetComponent<Rigidbody2D> ();
@@ -47,13 +48,19 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
 
 	void Start () {
         //HPText.text = "Health: " + playerHealth;
-        
+        if(!playerExists){
+            playerExists = true;
+            DontDestroyOnLoad(transform.gameObject);
+        }else{
+            Destroy(gameObject);
+        }
         distanceLeft.x = -(col2D.bounds.extents.x - margin + fixMargin);
         distanceLeft.y = -col2D.bounds.extents.y;
         distanceRight.x = col2D.bounds.extents.x - margin;
         distanceRight.y = -col2D.bounds.extents.y;
         distanceCenter.y = -col2D.bounds.extents.y;
 
+        sfxMan = FindObjectOfType<SFXManager>();
 	}
 	
 	void Update () {
@@ -127,31 +134,34 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
           }
           //anim test + //revolution of new box collider
 
-           if (grounded && Input.GetKeyDown(KeyCode.Q)) {
-          animator.SetTrigger("Attack0");
-          Vector3 temp = attackOrigin.transform.localPosition;
-          temp.x = attackDistance * lastDir;
-          attackOrigin.transform.localPosition = temp;
-          attackOrigin.enabled = true;
-          isAttack = true;
+          if (grounded && Input.GetKeyDown(KeyCode.Q)) {
+            animator.SetTrigger("Attack0");
+            Vector3 temp = attackOrigin.transform.localPosition;
+            temp.x = attackDistance * lastDir;
+            attackOrigin.transform.localPosition = temp;
+            attackOrigin.enabled = true;
+            isAttack = true;
+            sfxMan.soosh.Play();
           } 
 
-            if (grounded && Input.GetKeyDown(KeyCode.W)) {
-          animator.SetTrigger("Attack1");
-          Vector3 temp = attackOrigin.transform.localPosition;
-          temp.x = attackDistance * lastDir;
-          attackOrigin.transform.localPosition = temp;
-          attackOrigin.enabled = true;
-          isAttack = true;
+          if (grounded && Input.GetKeyDown(KeyCode.W)) {
+            animator.SetTrigger("Attack1");
+            Vector3 temp = attackOrigin.transform.localPosition;
+            temp.x = attackDistance * lastDir;
+            attackOrigin.transform.localPosition = temp;
+            attackOrigin.enabled = true;
+            isAttack = true;
+            sfxMan.soosh.Play();
           } 
 
-            if (grounded && Input.GetKeyDown(KeyCode.E)) {
-          animator.SetTrigger("Attack2");
-          Vector3 temp = attackOrigin.transform.localPosition;
-          temp.x = attackDistance * lastDir;
-          attackOrigin.transform.localPosition = temp;
-          attackOrigin.enabled = true;
-          isAttack = true;
+          if (grounded && Input.GetKeyDown(KeyCode.E)) {
+            animator.SetTrigger("Attack2");
+            Vector3 temp = attackOrigin.transform.localPosition;
+            temp.x = attackDistance * lastDir;
+            attackOrigin.transform.localPosition = temp;
+            attackOrigin.enabled = true;
+            isAttack = true;
+            sfxMan.soosh.Play();
           } 
 
 
@@ -204,7 +214,7 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
         if (other.CompareTag("deathzone")) {
                        
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);  
-             }
+         }
 
 
         if ( other.CompareTag("dinoEnemy"))
@@ -212,13 +222,14 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
             //playerHealth--;
            // other.GetComponent<Animator>().SetBool("isAttacking", true);
             Instantiate(blood, transform.position, Quaternion.identity);
-          
+            sfxMan.auch.Play();
             
         }
 
          if ( other.CompareTag("stonePortal"))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(2);  
+            UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+            //sfxMan.endLevel.Play();  
             
         }
 

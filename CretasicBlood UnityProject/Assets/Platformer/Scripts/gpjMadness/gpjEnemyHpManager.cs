@@ -11,9 +11,11 @@ public class gpjEnemyHpManager : MonoBehaviour {
 	public string enemyQuestName;
 	private gpjQuestManager theQM;
 
+	private SFXManager sfxMan;
+
 	// Use this for initialization
 	void Start () {
-
+		sfxMan = FindObjectOfType<SFXManager>();
 		currentHealth = maxHealth;
 		
 		thePlayerStats = FindObjectOfType<gpjPlayerStats>();
@@ -33,6 +35,7 @@ public class gpjEnemyHpManager : MonoBehaviour {
 	}
 
 	public void HurtEnemy(int damageToGive){
+		sfxMan.hurtEnemy.Play();
 		currentHealth -= damageToGive;
 	}
 

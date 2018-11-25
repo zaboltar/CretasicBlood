@@ -9,10 +9,12 @@ public class gpjHurtPlayer : MonoBehaviour {
 	private int currentDamage;
 
 	private gpjPlayerStats thePS;
+	
 
 	// Use this for initialization
 	void Start () {
 		thePS = FindObjectOfType<gpjPlayerStats>();
+		
 	}
 	
 	// Update is called once per frame
@@ -22,7 +24,7 @@ public class gpjHurtPlayer : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.tag == "Player") {
-
+			
 			currentDamage = damageToGive - thePS.currentDefence;
 			if (currentDamage < 0) {
 				currentDamage = 0;
