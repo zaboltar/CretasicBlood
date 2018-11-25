@@ -15,21 +15,28 @@ public class gpjHealthManager : MonoBehaviour {
 	private SpriteRenderer playerSprite;
 
 	public int collectedTreasures;
+	// private gpjUIManager canvas;
 	private SFXManager sfxMan;
+	private gpjPlayerStats playerStats;
 	
 	// Use this for initialization
 	void Start () {
-
+		
 		playerCurrentHealth = playerMaxHealth;
-
+		// playerStats = FindObjectOfType<gpjPlayerStats>();
 		playerSprite = GetComponent<SpriteRenderer>();
+		// canvas = FindObjectOfType<gpjUIManager>();
 		sfxMan = FindObjectOfType<SFXManager>();
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (playerCurrentHealth <= 0) {
 			Destroy(gameObject);
+			// Destroy(playerStats.gameObject);
+			Destroy(sfxMan.gameObject);
+			// Destroy(canvas.gameObject);
 			UnityEngine.SceneManagement.SceneManager.LoadScene(0);  
 		}
 

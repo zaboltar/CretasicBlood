@@ -20,16 +20,16 @@ public class gpjPlayerStats : MonoBehaviour {
 
 
 	private gpjHealthManager thePlayerHealth;
-	private static bool statsExist;
+	// public static bool statsExist;
 
 	// Use this for initialization
 	void Start () {
-		if(!statsExist){
-			statsExist = true;
-			DontDestroyOnLoad(transform.gameObject);
-		}else{
-			Destroy(gameObject);
-		}
+		// if(!statsExist){
+		// 	statsExist = true;
+		// 	DontDestroyOnLoad(transform.gameObject);
+		// }else{
+		// 	Destroy(gameObject);
+		// }
 		currentHp = HPLevels[1];
 		currentAttack = attackLevels[1];
 		currentDefence = defenceLevels[1];

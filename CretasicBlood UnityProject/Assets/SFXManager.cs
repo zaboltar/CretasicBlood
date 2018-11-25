@@ -11,7 +11,7 @@ public class SFXManager : MonoBehaviour {
 	public AudioSource soosh;
 	public AudioSource hurtEnemy;
 
-	private static bool sfxManExists;
+	public static bool sfxManExists;
 
 	// Use this for initialization
 	void Awake () {

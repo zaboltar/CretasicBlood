@@ -13,16 +13,16 @@ public class gpjUIManager : MonoBehaviour {
 	private collectIdol collectIdol;
 
 	public Text collectableCount;
-	private static bool canvasExists;
+	// public static bool canvasExists;
 	
 	// Use this for initialization
 	void Start () {
-		if(!canvasExists){
-            canvasExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }else{
-            Destroy(gameObject);
-        }
+		// if(!canvasExists){
+  //           canvasExists = true;
+  //           DontDestroyOnLoad(transform.gameObject);
+  //       }else{
+  //           Destroy(gameObject);
+  //       }
 		thePs = GetComponent<gpjPlayerStats>();
 		collectIdol = GetComponent<collectIdol>();
 

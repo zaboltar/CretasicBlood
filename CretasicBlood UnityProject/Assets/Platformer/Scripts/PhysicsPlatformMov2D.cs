@@ -38,7 +38,7 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
     public GameObject blood;
    //public GameObject spearWeapon;
     private SFXManager sfxMan;
-    private static bool playerExists;
+    public static bool playerExists;
     
     void Reset () {
         rb2D = GetComponent<Rigidbody2D> ();
@@ -212,7 +212,10 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("deathzone")) {
-            Destroy(gameObject);           
+            playerExists = false;
+            // gpjUIManager.canvasExists = false;
+            SFXManager.sfxManExists = false;        
+            Destroy(gameObject);
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);  
          }
 
