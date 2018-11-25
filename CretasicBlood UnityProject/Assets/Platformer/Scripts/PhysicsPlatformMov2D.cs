@@ -188,6 +188,7 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
                     transform.position = (transform.position + (Vector3.down * minDistance));
                     // Debug.Log algo
                     speed.y = 0;
+                    animator.SetFloat("onAirStatus", speed.y);
                     if (behaviour != null) { behaviour.OnPlatformStep(gameObject);}
                 }
                 grounded = true;
