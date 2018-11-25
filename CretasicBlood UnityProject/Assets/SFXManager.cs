@@ -13,13 +13,23 @@ public class SFXManager : MonoBehaviour {
 
 	public static bool sfxManExists;
 
+	static public SFXManager sfxM;
+
 	// Use this for initialization
-	void Awake () {
-		if(!sfxManExists){
+	void Start () {
+		if (sfxM == null) {
+			sfxM = this;
+			DontDestroyOnLoad(transform.gameObject);
+			}else{
+			Destroy(gameObject);
+
+		/*if(!sfxManExists){
 			sfxManExists = true;
 			DontDestroyOnLoad(transform.gameObject);
 		}else{
 			Destroy(gameObject);
+		}*/
+
 		}
 	}
 	
