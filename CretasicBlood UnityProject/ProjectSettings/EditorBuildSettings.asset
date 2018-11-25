@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Platformer/Scenes/0chooseLevelScreen.unity
     guid: e48bbef54e7746645aab4810132d701b
+  - enabled: 1
+    path: Assets/Platformer/Scenes/0introCinematics.unity
+    guid: 341183f9e6a8dc840959c5d4be8761de
   m_configObjects: {}
