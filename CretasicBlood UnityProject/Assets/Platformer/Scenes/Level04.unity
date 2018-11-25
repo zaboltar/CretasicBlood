@@ -4529,7 +4529,7 @@ Prefab:
     - target: {fileID: 114842813499301488, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
         type: 2}
       propertyPath: endText
-      value: or Distract you !
+      value: or misslead you !
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8351a7887a6fa97429b9553a4ef6ebd9, type: 2}
@@ -9833,7 +9833,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.037438586, y: 0.005645156}
+  m_Offset: {x: -0.0090465695, y: 0.005645156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.41389942, y: 0.55250067}
@@ -9844,7 +9844,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.846969, y: 1.6325309}
+  m_Size: {x: 0.790185, y: 1.6325309}
   m_EdgeRadius: 0
 --- !u!114 &1782317945
 MonoBehaviour:
