@@ -29,7 +29,7 @@ public class gpjHealthManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (playerCurrentHealth <= 0) {
-
+			Destroy(gameObject);
 			UnityEngine.SceneManagement.SceneManager.LoadScene(0);  
 		}
 

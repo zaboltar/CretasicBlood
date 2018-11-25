@@ -212,7 +212,7 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("deathzone")) {
-                       
+            Destroy(gameObject);           
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);  
          }
 
