@@ -356,8 +356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 2
   theQM: {fileID: 114637762412171186}
-  startText: hm
-  endText: Stone Portals starts and ends levels.
+  startText: ahm
+  endText: This place is full of warriors.
   isItemQuest: 0
   targetItem: 
   isEnemyQuest: 0
@@ -499,8 +499,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 1
   theQM: {fileID: 114637762412171186}
-  startText: 
-  endText: 
+  startText: ahm
+  endText: 'Remember: Click Screen for Spirit Bolt'
   isItemQuest: 0
   targetItem: 
   isEnemyQuest: 0
@@ -607,7 +607,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 1
+  m_Text: Level 05
 --- !u!114 &114553097163643808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -722,8 +722,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 0
   theQM: {fileID: 114637762412171186}
-  startText: uhm
-  endText: Press A and D to Run. Spacebar to Jump.
+  startText: ahm
+  endText: Press Q for Keyboard Attack.
   isItemQuest: 0
   targetItem: 
   isEnemyQuest: 0
@@ -791,9 +791,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLevel: 0
   currentExp: 0
-  toLevelUp: 0000000042000000960000005e0100009a02000014050000c40900000a1a00000a1a00006a040100
-  HPLevels: 0500000005000000050000000500000005000000
-  attackLevels: 06000000060000000a000000140000001e00000028000000320000003c000000460000009a020000
+  toLevelUp: 0000000002000000050000000a0000000f000000190000001e0000002d0000003c0000006a040100
+  HPLevels: 0500000005000000060000000700000008000000090000000a0000000b0000004200000001000000
+  attackLevels: 06000000060000000700000008000000090000000a0000000b0000000c0000000d0000009a020000
   defenceLevels: 00000000000000000100000001000000020000000300000004000000040000000200000006000000
   currentHp: 0
   currentAttack: 0

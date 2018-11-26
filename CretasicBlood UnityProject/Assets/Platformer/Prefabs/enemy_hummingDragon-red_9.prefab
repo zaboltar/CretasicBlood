@@ -60,7 +60,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.019533737, y: 0.47395653}
     oldSize: {x: 3.5, y: 1.78125}
     newSize: {x: 3.5, y: 1.78125}
     adaptiveTilingThreshold: 0.5
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  expToGive: 50
+  expToGive: 2
   enemyQuestName: dinosaurido
 --- !u!114 &114231738844760996
 MonoBehaviour:
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1febdf507a1b340965f2e921198559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 11
+  damageToGive: 1
   dmgNumber: {fileID: 1240806796634822, guid: 382a3ac2c3f99f542b096fed4198ab42, type: 2}
 --- !u!212 &212520247106402430
 SpriteRenderer:

@@ -10,6 +10,7 @@ public class SFXManager : MonoBehaviour {
 	public AudioSource getIdol;
 	public AudioSource soosh;
 	public AudioSource hurtEnemy;
+	public AudioSource doorOpens;
 
 	public static bool sfxManExists;
 

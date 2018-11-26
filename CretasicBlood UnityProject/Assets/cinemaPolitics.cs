@@ -11,7 +11,7 @@ public class cinemaPolitics : MonoBehaviour {
 	}
 
 	IEnumerator JumpToScene() {
-		yield return new WaitForSeconds(8f);
+		yield return new WaitForSeconds(12f);
 		SceneManager.LoadScene(1);
 	}
 	

@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   currentHealth: 50
-  expToGive: 50
+  expToGive: 1
   enemyQuestName: 
 --- !u!212 &212735238544600492
 SpriteRenderer:
