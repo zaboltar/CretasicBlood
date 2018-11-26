@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Platformer/Scenes/0introCinematics.unity
     guid: 341183f9e6a8dc840959c5d4be8761de
+  - enabled: 1
+    path: Assets/Platformer/Scenes/CreditScene.unity
+    guid: 522971b05dcf3b943baee3912e91f5f9
   m_configObjects: {}

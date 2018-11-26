@@ -41,6 +41,11 @@ public class Portal1 : MonoBehaviour {
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(6); 
         }
+
+          if ( other.CompareTag("StonePortalToEnd"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(9); 
+        }
         
         
 
