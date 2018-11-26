@@ -356,8 +356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 2
   theQM: {fileID: 114637762412171186}
-  startText: Go to TurtleGodTemple
-  endText: Welcome to the TurtleGod Temple!
+  startText: hm
+  endText: Stone Portals starts and ends levels.
   isItemQuest: 0
   targetItem: 
   isEnemyQuest: 0
@@ -409,10 +409,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 3
   theQM: {fileID: 114637762412171186}
-  startText: "Find the Panet\xF3n"
-  endText: "You have acquired the secrets of the Panet\xF3n!"
-  isItemQuest: 1
-  targetItem: paneton
+  startText: ahm
+  endText: 'Get close & Press Z to Talk '
+  isItemQuest: 0
+  targetItem: 
   isEnemyQuest: 0
   targetEnemy: 
   enemiesToKill: 0
@@ -607,7 +607,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 3
+  m_Text: Level 1
 --- !u!114 &114553097163643808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -669,8 +669,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 5
   theQM: {fileID: 114637762412171186}
-  startText: 
-  endText: 
+  startText: ahm
+  endText: Collect these Idols.
   isItemQuest: 0
   targetItem: 
   isEnemyQuest: 0
@@ -688,7 +688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -722,8 +722,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 0
   theQM: {fileID: 114637762412171186}
-  startText: This Starts The Kero Quest
-  endText: You have completed the Kero Quest
+  startText: uhm
+  endText: Press A and D to Run. Spacebar to Jump.
   isItemQuest: 0
   targetItem: 
   isEnemyQuest: 0
@@ -792,7 +792,7 @@ MonoBehaviour:
   currentLevel: 0
   currentExp: 0
   toLevelUp: 0000000042000000960000005e0100009a02000014050000c40900000a1a00000a1a00006a040100
-  HPLevels: 3200000032000000420000004d00000058000000630000006f000000de0000009a0200000a1a0000
+  HPLevels: 0500000005000000050000000500000005000000
   attackLevels: 06000000060000000a000000140000001e00000028000000320000003c000000460000009a020000
   defenceLevels: 00000000000000000100000001000000020000000300000004000000040000000200000006000000
   currentHp: 0
@@ -830,7 +830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
