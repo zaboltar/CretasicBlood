@@ -3362,6 +3362,11 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114635301018641444, guid: 8351a7887a6fa97429b9553a4ef6ebd9,
+        type: 2}
+      propertyPath: endText
+      value: A & D => Move, Q, W, E & Click => Attacks
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8351a7887a6fa97429b9553a4ef6ebd9, type: 2}
   m_IsPrefabParent: 0
