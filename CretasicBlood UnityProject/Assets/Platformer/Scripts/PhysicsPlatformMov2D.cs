@@ -48,12 +48,12 @@ public class PhysicsPlatformMov2D : MonoBehaviour {
 
 	void Start () {
         //HPText.text = "Health: " + playerHealth;
-        if(!playerExists){
-            playerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }else{
-            Destroy(gameObject);
-        }
+        // if(!playerExists){
+        //     playerExists = true;
+        //     DontDestroyOnLoad(transform.gameObject);
+        // }else{
+        //     Destroy(gameObject);
+        // }
         distanceLeft.x = -(col2D.bounds.extents.x - margin + fixMargin);
         distanceLeft.y = -col2D.bounds.extents.y;
         distanceRight.x = col2D.bounds.extents.x - margin;
