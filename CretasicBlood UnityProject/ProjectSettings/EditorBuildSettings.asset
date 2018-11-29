@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Platformer/Scenes/CreditScene.unity
     guid: 522971b05dcf3b943baee3912e91f5f9
+  - enabled: 1
+    path: Assets/Platformer/Scenes/0howToPlay.unity
+    guid: 8065bd2a051e7da4c9f26d1fc80b8cf0
+  - enabled: 1
+    path: Assets/Platformer/Scenes/0preLoreBe4Cinem.unity
+    guid: c265236d7f1347345b1659297a7ea886
   m_configObjects: {}
